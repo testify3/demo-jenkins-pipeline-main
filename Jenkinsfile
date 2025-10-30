@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Cloner le dépôt') {
             steps {
-                git 'https://github.com/<votre-utilisateur>/demo-jenkins-pipeline.git'
+                git 'https://github.com/testify3/demo-jenkins-pipeline-main.git'
             }
         }
 
