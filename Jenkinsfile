@@ -7,12 +7,12 @@ pipeline {
         MVN_HOME = '/usr/share/maven' // Spécification du chemin Maven
     }
 
-    stages {
-        stage('Cloner le dépôt') {
-            steps {
-                git 'https://github.com/testify3/demo-jenkins-pipeline-main.git'
-            }
-        }
+stage('Cloner le dépôt') {
+    steps {
+        git branch: 'main', url: 'https://github.com/testify3/demo-jenkins-pipeline-main.git'
+    }
+}
+
 
         stage('Compiler le code') {
             steps {
